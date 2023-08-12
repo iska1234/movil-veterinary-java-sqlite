@@ -7,5 +7,6 @@ To start the project you have to create the database by changing the main activi
 
 ![image](https://github.com/iska1234/movil-veterinary-java-sqlite/assets/119825666/27852451-7d47-4317-b130-12a98d5add4f)
 
+If everything goes well it should look like the picture.
 
 Thanks!
