@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuAdminActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:backgroundTint="#8881F6"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="126dp"
+            android:layout_height="156dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@mipmap/perroblanco" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/baloo_bhaina"
+            android:text="DE ADMINISTRADOR"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/baloo_bhaina"
+            android:text="MENU"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp"></TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="395dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnClinica"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8881F6"
+            android:drawableLeft="@mipmap/hogar"
+            android:text="CLINICAS"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnMedicacion"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8881F6"
+            android:drawableLeft="@mipmap/tratamiento"
+            android:text="MEDICACIÓN"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnHistorialMedico"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8881F6"
+            android:drawableLeft="@mipmap/examen"
+            android:text="HISTORIAL MÉDICO"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnVeterinarios"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8881F6"
+            android:drawableLeft="@mipmap/consulta"
+            android:text="VETERINARIOS"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnEspecialidad"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8881F6"
+            android:drawableLeft="@mipmap/usuario"
+            android:text="ESPECIALIDAD"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnBuscarVetPorEsp"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8881F6"
+            android:drawableLeft="@mipmap/list"
+            android:text="    VETERINARIOS POR ESPECIALIDAD"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnSalirLogin"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8881F6"
+            android:drawableLeft="@mipmap/salida"
+            android:text="SALIR"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

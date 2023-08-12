@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarMascotaActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="427dp"
+        android:layout_height="197dp"
+        android:backgroundTint="#8881F6"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="108dp"
+            android:layout_height="138dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@mipmap/perroblanco" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/baloo_bhaina"
+            android:text="A  TU MASCOTA"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/baloo_bhaina"
+            android:text="REGISTRA"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp"></TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="322dp"
+        android:layout_height="498dp"
+        android:layout_margin="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FFFF"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.678">
+
+        <ScrollView
+            android:layout_width="313dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="290dp"
+                android:layout_height="583dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilNomMas"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/advent_pro_medium"
+                    app:startIconDrawable="@mipmap/pawmorado">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtnombremascota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:hint="Nombre"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPesoMas"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    app:startIconDrawable="@mipmap/peso">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtpesomascota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:hint="Peso"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilEdadMas"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    app:startIconDrawable="@mipmap/pencil">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtedadmascota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:hint="Edad"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilRazaMas"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    app:startIconDrawable="@mipmap/pawmorado">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtrazamascota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:hint="Raza"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilEspecieMas"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    app:startIconDrawable="@mipmap/pawmorado">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtespeciemascota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:hint="Especie"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:text="Sexo :"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbhembra"
+                        android:layout_width="109dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:text="Hembra"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbmacho"
+                        android:layout_width="166dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:text="Macho"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnRegistrarMascota"
+                    android:layout_width="242dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="40sp"
+                    android:backgroundTint="#8881F6"
+                    android:text="REGISTRAR"
+                    android:textSize="12sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/btnRegresarMascota"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="197dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="40sp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10sp"
+                    android:text="REGRESAR"
+                    android:textColor="#8881F6"
+                    android:textSize="12sp"
+                    app:cornerRadius="20dp"
+                    app:strokeColor="#FFF" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

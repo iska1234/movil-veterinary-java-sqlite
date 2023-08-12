@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditarCitasActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView6"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:backgroundTint="#8881F6"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@mipmap/perroblanco" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="293dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/baloo_bhaina"
+                    android:text="LA CITA"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"></TextView>
+
+                <TextView
+                    android:layout_width="282dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/baloo_bhaina"
+                    android:text="ACTUALIZAR"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="30sp"></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="337dp"
+                android:layout_height="488dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="#FFFF"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView40"
+                            android:layout_width="106dp"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/advent_pro_medium"
+                            android:text="Tipo : "
+                            android:textColor="#8881F6"
+                            android:textSize="17dp" />
+                        <TextView
+                            android:id="@+id/edttipodecitaedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView41"
+                            android:layout_width="105dp"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/advent_pro_medium"
+                            android:text="Mascota : "
+                            android:textColor="#8881F6"
+                            android:textSize="17dp" />
+                        <TextView
+                            android:id="@+id/edtnombremascotacitaedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/advent_pro_medium"
+                            android:text="Veterinario : "
+                            android:textColor="#8881F6"
+                            android:textSize="17dp" />
+                        <TextView
+                            android:id="@+id/edtveterinarioedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:text="Elija una fecha "
+                        android:textColor="#8881F6"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/edtfechacitaedt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="date" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:text="Elija la hora"
+                        android:textColor="#8881F6"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/edthoracitaedt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="date" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/advent_pro_medium"
+                            android:text="Elija una clinica"
+                            android:textColor="#8881F6"
+                            android:textSize="17dp" />
+
+                        <Spinner
+                            android:id="@+id/spinnersedescedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/edtdescripcionedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Descripcion"
+                            android:inputType="textPersonName" />
+
+                        <Button
+                            android:id="@+id/btneditarcita"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#8881F6"
+                            android:text="ACTUALIZAR"
+                            app:cornerRadius="20dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fabMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            app:menu_colorNormal="#8881F6"
+            android:layout_alignParentBottom="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabeliminar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|end"
+                android:src="@mipmap/eliminar"
+                app:fab_label="Eliminar"
+                android:fontFamily="@font/advent_pro_medium"
+                app:fab_colorNormal="#8881F6"
+                app:fab_colorPressed="#8881F6" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fablistar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|end"
+                android:src="@mipmap/list"
+                app:fab_label="Listar"
+                android:fontFamily="@font/advent_pro_medium"
+                app:fab_colorNormal="#8881F6"
+                app:fab_colorPressed="#8881F6" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>
+</LinearLayout>

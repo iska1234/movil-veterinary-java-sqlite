@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nuevaespecialidad">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="410dp"
+        android:layout_height="181dp"
+        android:backgroundTint="#8881F6"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="122dp"
+            android:layout_height="195dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@mipmap/perroblanco" />
+
+        <TextView
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/baloo_bhaina"
+            android:text="Registra una"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="95dp"
+            android:fontFamily="@font/baloo_bhaina"
+            android:text="ESPECIALIDAD"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="24sp"></TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="330dp"
+        android:layout_height="314dp"
+        android:layout_margin="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FFFF"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.485">
+
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="295dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNomEsp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/advent_pro_medium"
+                app:startIconDrawable="@mipmap/consulta">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtnombredeespecialidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:hint="Nombre de Especialidad"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDescEsp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/advent_pro_medium"
+                app:startIconDrawable="@mipmap/pencil">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtdescripcionespecialidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:hint="Descripcion"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnregistrarnuevaespecialidad"
+                android:layout_width="278dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#8881F6"
+                android:text="REGISTRAR"
+                android:textSize="12sp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnlistaespecialidad"
+                android:layout_width="278dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#8881F6"
+                android:text="LISTADO"
+                android:textSize="12sp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        app:menu_colorNormal="#8881F6"
+        android:layout_alignParentBottom="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fablistEspecialidad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:clickable="true"
+            android:fontFamily="@font/advent_pro_medium"
+            android:src="@mipmap/list"
+            app:fab_colorNormal="#8881F6"
+            app:fab_colorPressed="#8881F6" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabMenuEsp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:clickable="true"
+            android:fontFamily="@font/advent_pro_medium"
+            android:src="@mipmap/hogar"
+            app:fab_colorNormal="#8881F6"
+            app:fab_colorPressed="#8881F6" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

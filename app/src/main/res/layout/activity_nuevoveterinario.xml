@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nuevoveterinario">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="427dp"
+        android:layout_height="197dp"
+        android:backgroundTint="#8881F6"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="130dp"
+            android:layout_height="141dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            app:srcCompat="@mipmap/perroblanco" />
+
+        <TextView
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/baloo_bhaina"
+            android:text="Registra un nuevo"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="18sp"></TextView>
+        <TextView
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/baloo_bhaina"
+            android:text="VETERINARIO"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="24sp"></TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="341dp"
+        android:layout_height="564dp"
+        android:layout_margin="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FFFF"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.652">
+
+        <ScrollView
+            android:layout_width="335dp"
+            android:layout_height="547dp">
+
+            <LinearLayout
+                android:layout_width="341dp"
+                android:layout_height="583dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilNomVet"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/advent_pro_medium"
+                    app:startIconDrawable="@mipmap/user">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtnuevonombreveterinario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:hint="Nombres"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilApeVet"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    app:startIconDrawable="@mipmap/user">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtnuevoapellidoveterinario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:hint="Apellidos"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilDniVet"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/advent_pro_medium"
+                        app:startIconDrawable="@mipmap/pencil">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtnuevodniveterinario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/advent_pro_medium"
+                            android:hint="Dni"
+                            android:inputType="number"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilCelVet"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="161dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/advent_pro_medium"
+                        app:startIconDrawable="@mipmap/telefono">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtnuevocelularveterinario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/advent_pro_medium"
+                            android:hint="Celular"
+                            android:inputType="phone"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilDireVet"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    app:startIconDrawable="@mipmap/marker">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtnuevadireccionveterinario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:hint="Dirección"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:text="Sexo :"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbfemeninoVet"
+                        android:layout_width="51dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:text="Femenino"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbmasculinoVet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:text="Masculino"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCorreoVet"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    app:startIconDrawable="@mipmap/correo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtnuevocorreoveterinario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:hint="Correo electrónico"
+                        android:inputType="textEmailAddress"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:text="Seleccione Especialidad :"
+                    android:textColor="#8881F6"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/spinneridespecialidades"
+                    android:layout_width="248dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnregistrarnuevovet"
+                    android:layout_width="291dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#8881F6"
+                    android:text="REGISTRAR"
+                    android:textSize="12sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/btnlistaveterinarios"
+                    android:layout_width="291dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#8881F6"
+                    android:text="LISTAR"
+                    android:textSize="12sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/btnAgregarDataApi"
+                    android:layout_width="291dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#8881F6"
+                    android:text="BUSCAR POR DNI"
+                    android:textSize="12sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

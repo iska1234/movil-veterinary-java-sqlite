@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/advent_pro_medium</item>
+        <item>@font/baloo_bhai</item>
+        <item>@font/baloo_bhaina</item>
+        <item>@font/baloo_da</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/quicksand_medium</item>
+        <item>@font/text_me_one</item>
+        <item>@font/viga</item>
+    </array>
+</resources>

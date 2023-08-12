@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Hi Paw"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProyectoClinicaVeterinaria"
+        tools:targetApi="31" >
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Editarhistorialmedico" />
+
+        <activity android:name=".ListarVeterinarioporEspecialidad" />
+
+        <activity android:name=".ListadoHistorialMedico" />
+
+        <activity
+            android:name=".ApiReniec"
+            android:exported="true" />
+
+        <activity
+            android:name=".Nuevohistorialmedico"
+            android:exported="true" />
+
+        <activity android:name=".EditarveterinarioActivity" />
+
+        <activity android:name=".ListadoVeterinario" />
+
+        <activity android:name=".Nuevaespecialidad" />
+        <activity android:name=".EditarmedicacionActivity" />
+        <activity android:name=".ListadoMedicacion" />
+        <activity android:name=".Nuevamedicacion" />
+        <activity android:name=".EditarespecialidadActivity" />
+        <activity android:name=".ListadoEspecialidad" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ListadoClinica" />
+        <activity android:name=".EditarclinicaActivity" />
+        <activity android:name=".NuevaClinica" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCDZ5U7hDPz5UhNh0-ioztguvicXPVu9Dc" />
+
+        <activity
+            android:name=".UbicacionMapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_ubicacion_maps" />
+        <activity
+            android:name=".RegistrarCitasActivity0"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MenuPrincipalActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ListadoMascotasActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DetalleMascotaActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RegistrarCitas2Activity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RegistrarUsuarioActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ListadoCitasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditarCitasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Nuevoveterinario"
+            android:exported="true" />
+
+        <activity
+            android:name=".ConfirmarAdmin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".BaseDeDatosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrarMascotaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrarCitasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MenuAdminActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

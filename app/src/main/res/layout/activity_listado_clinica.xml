@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ListadoClinica">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/baloo_bhaina"
+        android:text="CLINICAS"
+        android:textAlignment="center"
+        android:textColor="#8881F6"
+        android:textSize="28sp"></TextView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/advent_pro_medium"
+        android:text="Escriba la Clinica a buscar :"
+        android:textColor="#8881F6"
+        android:textSize="16sp" />
+
+    <SearchView
+        android:id="@+id/txtbuscarclinica"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ListaClinicasrv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            app:menu_colorNormal="#8881F6"
+            android:layout_alignParentBottom="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabMenuClinica"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|end"
+                android:clickable="true"
+                android:fontFamily="@font/advent_pro_medium"
+                android:src="@mipmap/hogar"
+                app:fab_colorNormal="#8881F6"
+                app:fab_colorPressed="#8881F6" />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabRegistroClinica"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|end"
+                android:clickable="true"
+                android:fontFamily="@font/advent_pro_medium"
+                android:src="@mipmap/examen"
+                app:fab_colorNormal="#8881F6"
+                app:fab_colorPressed="#8881F6" />
+        </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarclinicaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:backgroundTint="#8881F6"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                app:srcCompat="@mipmap/perroblanco" />
+
+            <TextView
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/baloo_bhaina"
+                android:text="Editemos la"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="22sp"></TextView>
+
+            <TextView
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="55dp"
+                android:fontFamily="@font/baloo_bhaina"
+                android:text="CLINICA"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="38sp"></TextView>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="367dp"
+            android:layout_height="396dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#FFFF"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cardView2"
+            app:layout_constraintVertical_bias="0.485">
+
+
+            <LinearLayout
+                android:layout_width="341dp"
+                android:layout_height="380dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilSedeCliUpdate"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    app:startIconDrawable="@mipmap/hogar">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtsedeeditarclinica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:hint="Ingrese la Sede"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilDireCliUpdate"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    app:startIconDrawable="@mipmap/marker">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtdireccioneditarclinica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:hint="Dirección de Clinica"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilTelCliUpdate"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    app:startIconDrawable="@mipmap/telefono">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edteditartelefonoclinica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:hint="Telefono de la Clinica"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btnguardareditarclinica"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#8881F6"
+                    android:text="ACTUALIZAR"
+                    android:textSize="12sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/btnregresarallistado"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#8881F6"
+                    android:text="LISTADO"
+                    android:textSize="12sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <com.github.clans.fab.FloatingActionMenu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            app:menu_colorNormal="#8881F6"
+            android:layout_alignParentBottom="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabregresalistaclinica"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|end"
+                android:clickable="true"
+                android:fontFamily="@font/advent_pro_medium"
+                android:src="@mipmap/list"
+                app:fab_colorNormal="#8881F6"
+                app:fab_colorPressed="#8881F6" />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabeliminarclinica"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|end"
+                android:clickable="true"
+                android:fontFamily="@font/advent_pro_medium"
+                android:src="@mipmap/eliminar"
+                app:fab_colorNormal="#8881F6"
+                app:fab_colorPressed="#8881F6" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

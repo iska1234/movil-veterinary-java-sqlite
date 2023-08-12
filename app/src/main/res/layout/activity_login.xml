@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="427dp"
+        android:layout_height="197dp"
+        android:backgroundTint="#8881F6"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="LOGIN"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="48sp"></TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="355dp"
+        android:layout_height="623dp"
+        android:layout_margin="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FFFF"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.891">
+
+        <LinearLayout
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imgLoginMascota"
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@mipmap/perrito" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCorreo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/advent_pro_medium"
+                app:startIconDrawable="@mipmap/correo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:hint="Correo Electronico"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilContra"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/advent_pro_medium"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@mipmap/contra">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtContra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="268dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40sp"
+                android:backgroundTint="#8881F6"
+                android:text="INGRESAR"
+                android:textSize="16sp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnOlvidarPassw"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="197dp"
+                android:layout_height="63dp"
+                android:layout_marginLeft="40sp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10sp"
+                android:text="¿Olvidaste tu contraseña?"
+                android:textColor="#8881F6"
+                android:textSize="14sp"
+                app:cornerRadius="20dp"
+                app:strokeColor="#FFF" />
+
+            <Button
+                android:id="@+id/btnRegresarLogin"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="197dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40sp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10sp"
+                android:text="REGRESAR"
+                android:textColor="#8881F6"
+                android:textSize="14sp"
+                app:cornerRadius="20dp"
+                app:strokeColor="#FFF" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

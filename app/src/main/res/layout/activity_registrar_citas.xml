@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".RegistrarCitasActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:backgroundTint="#8881F6"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="126dp"
+            android:layout_height="156dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@mipmap/perroblanco" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/baloo_bhaina"
+            android:text="UN ÁREA"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/baloo_bhaina"
+            android:text="SELECCIONA"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="30sp"></TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnTratamiento"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8881F6"
+            android:drawableLeft="@mipmap/tratamiento"
+            android:text="TRATAMIENTO"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnOperaciones"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8881F6"
+            android:drawableLeft="@mipmap/operacion"
+            android:text="OPERACIÓN"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnVacunas"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8881F6"
+            android:drawableLeft="@mipmap/vacuna"
+            android:text="VACUNAS"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnConsultaMedica"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8881F6"
+            android:drawableLeft="@mipmap/consulta"
+            android:text="CONSULTA MÉDICA"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnEstetica"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8881F6"
+            android:drawableLeft="@mipmap/estetica"
+            android:text="ESTÉTICA"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnExamenMedico"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8881F6"
+            android:drawableLeft="@mipmap/examen"
+            android:text="EXAMEN MEDICO"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+</LinearLayout>
